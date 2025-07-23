@@ -16,7 +16,9 @@ public class App {
 					+ "\n3. Add Employee "
 					+ "\n4. Update Employee Data "
 					+ "\n5. Delete Employee"
-					+ "\n6. Exit");
+					+ "\n6. Set Employee Documents"
+					+ "\n7. Exit");
+					
 		Scanner sc = new Scanner(System.in);
 		int choice = sc.nextInt();
 		
@@ -47,6 +49,10 @@ public class App {
 			case 5 :
 				DeleteEmployee delete =  new DeleteEmployee();
 				delete.deleteStudentData();
+				break;
+			case 6 :
+				SetEmployeeDoc setDoc = new SetEmployeeDoc();
+				setDoc.setDoc();
 				break;
 		
 			default : {

@@ -3,7 +3,7 @@ package employee.Utility;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-public class HibernateUtility {
+public class HibernateUtility{
 	
 	private static SessionFactory factory;
 	

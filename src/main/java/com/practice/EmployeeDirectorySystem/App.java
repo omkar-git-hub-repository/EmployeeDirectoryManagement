@@ -45,7 +45,7 @@ public class App {
 				
 			case 5 :
 				DeleteEmployee delete =  new DeleteEmployee();
-				delete.deleteStudentData();
+				delete.deleteEmployeeData();
 				break;
 			case 6 :
 				SetEmployeeDoc setDoc = new SetEmployeeDoc();

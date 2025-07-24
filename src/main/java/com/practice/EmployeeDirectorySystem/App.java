@@ -17,7 +17,7 @@ public class App {
 					+ "\n4. Update Employee Data "
 					+ "\n5. Delete Employee"
 					+ "\n6. Set Employee Documents"
-					+ "\n7. Exit");
+					+ "\n7. Exit ");
 					
 		Scanner sc = new Scanner(System.in);
 		int choice = sc.nextInt();

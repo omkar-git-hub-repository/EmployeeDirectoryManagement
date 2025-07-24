@@ -5,7 +5,6 @@ import java.util.Scanner;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
-
 import employee.Entity.Employee;
 import employee.Utility.HibernateUtility;
 
@@ -57,8 +56,7 @@ public class UpdateEmployeeData {
 
 		// 6.close session
 		session.close();
-		
-		
+		System.out.println("Employee Data Updated Successfully");	
 	}
 
 }

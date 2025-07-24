@@ -3,7 +3,6 @@ package com.practice.EmployeeDirectorySystem;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
-
 import employee.Entity.Employee;
 import employee.Entity.EmployeeDocuments;
 import employee.Utility.HibernateUtility;
@@ -15,7 +14,6 @@ public class SetEmployeeDoc {
         SessionFactory factory = HibernateUtility.getSessionFactory();
         Session session = factory.openSession();
         Transaction transaction = session.beginTransaction();
-
 
         // Create EmployeeDoc object
         EmployeeDocuments employeeDoc = new EmployeeDocuments();

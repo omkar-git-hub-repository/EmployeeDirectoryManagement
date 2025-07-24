@@ -9,11 +9,9 @@ import org.hibernate.Transaction;
 import employee.Entity.Employee;
 import employee.Utility.HibernateUtility;
 
-
-
 public class DeleteEmployee {
-	
-	public void deleteStudentData() {
+
+	public void deleteEmployeeData() {
 
 		// 1. Session Factory
 		SessionFactory factory = HibernateUtility.getSessionFactory();
@@ -30,13 +28,10 @@ public class DeleteEmployee {
 
 		Employee st = session.find(Employee.class, StudentIdUserInput);
 		
-		session.remove(st);
-		
+		session.remove(st);	
 		transaction.commit();
-		
+		System.out.println("Student Data Deleted Successfully");
 		session.close();
-		
 
 	}
-
 }
